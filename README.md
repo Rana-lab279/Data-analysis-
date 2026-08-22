@@ -17,7 +17,6 @@
   - [Data Analysis](#2-data-analysis)
   - [Visualization](#3-visualization)
   - [Statistical Justification](#4-statistical-justification)
-- [Results Summary](#results-summary)
 - [Key Insights & Implications](#key-insights--implications)
 - [Data Limitations](#data-limitations)
 - [Tools & Technologies](#tools--technologies)
@@ -85,8 +84,8 @@ This analysis contributes to understanding the global malaria burden trajectory 
 | 2 | Eritrea | 83.43 | 
 | 3 | Djibouti | 42.02 | 
 
-### Key Observation
-**The change was not uniform across countries**, indicating disparate outcomes in malaria control efforts globally. Success in some regions contrasts sharply with stagnation or regression in others.
+### Complete file for results interpretation
+📥 [Download](Results%Interpretation.pdf)
 
 ---
 
@@ -94,22 +93,12 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 ### Data Source
 - **Primary Source**: [WHO Global Health Observatory](https://data.who.int/countries/729)
-- **Dataset Name**: RELAY_WHS (Reported malaria cases and deaths)
+- **Dataset Name**: RELAY_WHS
+- **Dataset file**: 📥 [Download](RELAY_WHS.csv) 
 - **Time Period**: 2000 to 2024 (25 years)
-- **Countries Analyzed**: 103
+- **Countries Analyzed**: 108
 
-### Data Files
 
-| File Name | Description | Format | Status |
-|-----------|-------------|--------|--------|
-| `RELAY_WHS.csv` | Original dataset from WHO | CSV | 📥 [Download](RELAY_WHS.csv) |
-| `cleaned_malaria_data.sav` | Cleaned and processed data (variables removed, filtered to country-level) | SPSS (.sav) | 📥 [Download](cleaned%20malaria%20data.sav) |
-
-### Data Characteristics
-- **Initial dataset dimensions**: [Insert: number of rows × columns]
-- **Final dataset dimensions**: [Insert: number of rows × columns]
-- **Missing data handling**: [Describe approach - deletion, imputation, etc.]
-- **Data quality checks performed**: Outlier detection, value range validation, temporal sequence checks
 
 ---
 
@@ -120,23 +109,22 @@ This analysis contributes to understanding the global malaria burden trajectory 
 **Objective**: Prepare raw WHO data for analysis by removing irrelevant variables and filtering to country-level units.
 
 **Variables Removed** (n=8):
-- `IND_ID`, `IND_CODE`, `IND_UUID`, `IND_PER_CODE`
-- `DIM_TIME_TYPE`, `DIM_GEO_CODE_M49`, `DIM_PUBLISH_STATE_CODE`, `IND_NAME`
+- `IND_ID`, `IND_CODE`, `IND_UUID`, `IND_PER_CODE`,`DIM_TIME_TYPE`, `DIM_GEO_CODE_M49`, `DIM_PUBLISH_STATE_CODE`, `IND_NAME`
 
-**Variables Retained** (n=[...]): 
-- `DIM_GEO_CODE_TYPE`, `GEO_NAME_SHORT`, `DIM_TIME`, [*complete list*]
+**Variables Retained** (n=6): 
+- `DIM_GEO_CODE_TYPE`, `DIM_TIME`, `GEO_NAME_SHORT`,`RATE_PER_1000_N', 'RATE_PER_1000_NL', 'RATE_PER_1000_NU'
+
+ **Data after removing variables, labeling and left alignment**: 📥 [Download](cleaned%20malaria%20data.sav) 
 
 **Data Filtering & Aggregation**:
 - Filtered to include only "COUNTRY" geographical units (excluded regional/continental aggregates)
 - Aggregated malaria incidence by country across all regions within each country
 - Sorted by number of cases to identify missing data patterns across years
 
-**Records Before → After**: [Insert: Original n → Final n records]
-
 **Data Completeness**: 
-- Countries with complete 2000-2024 data: [X]
-- Countries with missing years: [Y]
-- Handling strategy: [Describe approach - excluded from analysis, interpolated, etc.]
+- Countries with complete 2000-2024 data: 103
+- Countries with missing years: 5
+- Handling strategy: Missing countries were excluded from the analysis
 
 ### 2. Data Analysis
 
@@ -199,46 +187,6 @@ Analyzed the `CHANGE` variable:
 | Sample Type | Paired data (2000 vs 2024) | Requires paired test |
 | Data Distribution | Skewed/Non-normal | Non-parametric test necessary |
 | **Decision** | — | **Wilcoxon Signed Rank Test** (robust, no normality assumption) |
-
----
-
-## Results Summary
-
-### Quantitative Outcomes
-
-**Table 1: Summary Statistics of Malaria Incidence Change (2000-2024)**
-
-| Statistic | Value | Unit |
-|-----------|-------|------|
-| **Median Change** | -17.78 | Cases per 1,000 population at risk |
-| **IQR** | 109.76 | Cases per 1,000 |
-| **Mean Change** | [Insert] | Cases per 1,000 |
-| **Std. Deviation** | [Insert] | Cases per 1,000 |
-| **Range (Min)** | [Insert] | Cases per 1,000 |
-| **Range (Max)** | [Insert] | Cases per 1,000 |
-| **Wilcoxon Test (p-value)** | [Insert] | Statistical significance |
-| **Effect Size (r)** | [Insert] | Small/Medium/Large |
-
-**Table 2: Countries with Greatest Malaria Reduction**
-
-| Rank | Country | 2000 Incidence | 2024 Incidence | Change | % Reduction | Region |
-|------|---------|---|---|---|---|---|
-| 1 | Solomon Islands | [X] | [Y] | -359.54 | [%] | Pacific |
-| 2 | Guinea-Bissau | [X] | [Y] | -286.34 | [%] | Africa |
-| 3 | Burkina Faso | [X] | [Y] | -[...] | [%] | Africa |
-
-**Table 3: Countries with Increased Malaria Incidence**
-
-| Rank | Country | 2000 Incidence | 2024 Incidence | Change | % Increase | Region |
-|------|---------|---|---|---|---|---|
-| 1 | [Country] | [X] | [Y] | [+value] | [%] | [Region] |
-| 2 | [Country] | [X] | [Y] | [+value] | [%] | [Region] |
-
-### Visual Summary
-
-*[Insert: Choropleth map image showing global distribution of changes]*
-
-*[Insert: Bar chart of top 10 countries with reductions]*
 
 ---
 
@@ -317,11 +265,7 @@ Analyzed the `CHANGE` variable:
 | **Microsoft Excel** | 2021 | Geographical map visualization, supplementary charts |
 | **WHO Data Portal** | — | Data source and extraction |
 
-### Why SPSS 27?
-- Robust non-parametric statistical tests
-- Efficient handling of large datasets
-- Reliable output for publication-quality results
-- Built-in tools for missing data assessment
+
 
 ### Alternative Technologies (For Extension)
 - **Python**: Pandas/NumPy for data manipulation, Scipy for statistics, Geopandas/Folium for mapping
@@ -415,21 +359,7 @@ Data-analysis-/
    - Bar charts for top 10 countries
    - Distribution histogram
 2. Save: outputs/malaria_choropleth_map.png, etc.
-```
 
-### Verification Checklist
-- [ ] Raw data downloaded successfully (N = [X] records)
-- [ ] Cleaned dataset created (N = [Y] records)
-- [ ] Median change = -17.78
-- [ ] IQR = 109.76
-- [ ] Wilcoxon test p-value = [Insert value]
-- [ ] Top 3 countries: Solomon Islands (-359.54), Guinea-Bissau (-286.34), Burkina Faso (-[...])
-
-### Expected Output Files
-- `cleaned_malaria_data.sav` (SPSS data file)
-- Descriptive statistics (means, medians, ranges)
-- Statistical test results
-- Visualization images
 
 ---
 
@@ -474,12 +404,6 @@ Data-analysis-/
    - Bootstrap confidence intervals
    - Cross-validation of statistical findings
 
-### Stakeholders for Collaboration
-- WHO regional offices
-- National malaria control programs
-- Research institutions specializing in epidemiology
-- Global health funding organizations (Global Fund, Gates Foundation)
-
 ---
 
 ## Author
@@ -489,7 +413,7 @@ Data-analysis-/
 - **GitHub**: [@Rana-lab279](https://github.com/Rana-lab279)
 - **Project Repository**: [Data-analysis-](https://github.com/Rana-lab279/Data-analysis-)
 - **Analysis Date**: 2024
-- **Contact**: [Add email if desired]
+- **Contact**: ......................
 
 ### About This Analysis
 This analysis was conducted as part of a comprehensive data analysis project focusing on global health trends. The work demonstrates skills in:
@@ -504,28 +428,7 @@ This analysis was conducted as part of a comprehensive data analysis project foc
 ## Acknowledgments
 
 - **Data Source**: World Health Organization (WHO) Global Health Observatory
-- **Statistical Methods**: Wilcoxon Signed Rank Test (non-parametric inference)
 - **Tools**: IBM SPSS Statistics, Microsoft Excel
-
----
-
-## License
-
-[Add license type - e.g., MIT, CC-BY-4.0, etc.]
-
----
-
-## Changelog
-
-**Version 1.1** (2024)
-- Enhanced documentation with detailed methodology
-- Added results summary tables
-- Included statistical justification
-- Expanded limitations section
-- Added reproducibility guide
-
-**Version 1.0** (Initial)
-- Project completion with SPSS and Excel analysis
 
 ---
 
