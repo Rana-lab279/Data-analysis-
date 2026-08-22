@@ -68,16 +68,22 @@ This analysis contributes to understanding the global malaria burden trajectory 
 2. **Guinea-Bissau**: -286.34 cases per 1,000
 3. **Burkina Faso**: -243.68 cases per 1,000 
 
-| Rank | Country | Change (cases per 1,000) | % Reduction |
-|------|---------|--------------------------|------------|
-| 1 | Solomon Islands | -359.54 | [Calculate %] |
-| 2 | Guinea-Bissau | -286.34 | [Calculate %] |
-| 3 | Burkina Faso | -[...] | [Calculate %] |
+| Rank | Country | Change (cases per 1,000) | 
+|------|---------|--------------------------|
+| 1 | Solomon Islands | -359.54 | 
+| 2 | Guinea-Bissau | -286.34 | 
+| 3 | Burkina Faso | -243.68 | 
 
-### Distribution of Changes
-- **Countries with reduction (n=)**: [Insert number]
-- **Countries with increase (n=)**: [Insert number]
-- **Countries with no change (n=)**: [Insert number]
+### Countries with Largest Increases
+1. **Madagascar**: 200.59 cases per 1,000
+2. **Eritrea**: 83.43 cases per 1,000
+3. **Djibouti**: 42.02 cases per 1,000 
+
+| Rank | Country | Change (cases per 1,000) | 
+|------|---------|--------------------------|
+| 1 | Madagascar | 200.59 | 
+| 2 | Eritrea | 83.43 | 
+| 3 | Djibouti | 42.02 | 
 
 ### Key Observation
 **The change was not uniform across countries**, indicating disparate outcomes in malaria control efforts globally. Success in some regions contrasts sharply with stagnation or regression in others.
