@@ -32,11 +32,24 @@ Data after cleaning and removing unnecessary variables: 📥 [Download Dataset](
 Time period: 2000 to 2024
 
 
-##Methodology
+##Methodology##
+
 1. Data cleaning and editing:
    - Unnecessary variables (IND_ID, IND_CODE, IND_UUID, IND_PER_CODE, DIM_TIME_TYPE, DIM_GEO_CODE_M49, DIM_PUBLISH_STATE_CODE, IND_NAME) were deleted while (DIM_GEO_CODE_TYPE, GEO_NAME_SHORT, DIM_TIME, RATE_PER_1000_N, RATE_PER_1000_NL, RATE_PER_1000_NU) were kept, labeled, and aligned left.
   - All geographical units other than "COUNTRY" were filtered out.
   - Countries were aggregated by the number of cases then sorted to see the list of countries and know which had missing years.
+
+2. Data analysis:
   - To calculate the overall change in malaria incidence from 2000 to 2024, 2 variables were created for incidence in 2024 and in 2000. Descriptive analysis was performed to see the median and IQR in 2000 and 2024.
-  -                       
-    
+  - Data was aggregate before calculating the change to combine incidence in 2000 and 2024 into one row per country. The change was calculated by subtracting 2024-2000.
+  - Descriptive analysis was done on "Change" to see how malaria incidence has changed across countries from 2000 to 2024 and to check for normality.
+  - The change in malaria incidence was sorted to see which countries experienced the largest reductions or increases.
+  - Statistical analysis (Wilcoxon signed rank test) was performed because data was not normally distributed to determine if the change in malaria incidence across countries from 2000 to 2024 is significant.       
+
+3. Visualization:
+ - The geographical map showing the change in malaria incidence across countries was created using Excel.
+
+
+##Tools used##
+ - SPSS V.27 for data cleaning and analysis.
+ - Excel for visualization.
