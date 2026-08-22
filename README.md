@@ -33,4 +33,10 @@ Time period: 2000 to 2024
 
 
 ##Methodology
-1. Data cleaning and editing: 
+1. Data cleaning and editing:
+   - Unnecessary variables (IND_ID, IND_CODE, IND_UUID, IND_PER_CODE, DIM_TIME_TYPE, DIM_GEO_CODE_M49, DIM_PUBLISH_STATE_CODE, IND_NAME) were deleted while (DIM_GEO_CODE_TYPE, GEO_NAME_SHORT, DIM_TIME, RATE_PER_1000_N, RATE_PER_1000_NL, RATE_PER_1000_NU) were kept, labeled, and aligned left.
+  - All geographical units other than "COUNTRY" were filtered out.
+  - Countries were aggregated by the number of cases then sorted to see the list of countries and know which had missing years.
+  - To calculate the overall change in malaria incidence from 2000 to 2024, 2 variables were created for incidence in 2024 and in 2000. Descriptive analysis was performed to see the median and IQR in 2000 and 2024.
+  -                       
+    
