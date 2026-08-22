@@ -30,7 +30,7 @@
 
 ## Project Overview
 
-This project **analyzes the change in malaria incidence from 2000 to 2024 across 103 countries** using publicly available data from the WHO website. The analysis examines temporal trends in malaria epidemiology and identifies countries with the most significant reductions and increases over this 24-year period.
+This project **analyzes the change in malaria incidence from 2000 to 2024 across 103 countries** using publicly available data from the WHO website. The analysis examines temporal trends in malaria epidemiology and identifies countries with the most significant reductions and increases over this 25-year period.
 
 **Project Goal**: Determine how malaria incidence has changed across countries from 2000 to 2024, and identify which countries experienced the largest reductions or increases, providing insights for public health policy and intervention planning.
 
@@ -53,12 +53,6 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 **How has malaria incidence changed across countries from 2000 to 2024, and which countries experienced the largest reductions and increases?**
 
-### Sub-Questions Addressed:
-1. Is there a statistically significant overall trend in malaria incidence changes?
-2. Which countries showed the most dramatic improvements?
-3. Are there countries where malaria incidence worsened?
-4. What is the variability in malaria control progress across regions?
-
 ---
 
 ## Key Findings
@@ -67,12 +61,12 @@ This analysis contributes to understanding the global malaria burden trajectory 
 - **Median change in malaria incidence (2000-2024)**: -17.78 cases per 1,000 population at risk
 - **Interquartile Range (IQR)**: 109.76
 - **Direction**: Overall reduction across the majority of countries analyzed
-- **Statistical Significance**: Wilcoxon Signed Rank Test (p < 0.05) [*add exact p-value*]
+- **Statistical Significance**: Wilcoxon Signed Rank Test (p < 0.001) 
 
 ### Countries with Largest Reductions
 1. **Solomon Islands**: -359.54 cases per 1,000
 2. **Guinea-Bissau**: -286.34 cases per 1,000
-3. **Burkina Faso**: -2[...] cases per 1,000 [*complete with actual values*]
+3. **Burkina Faso**: -243.68 cases per 1,000 
 
 | Rank | Country | Change (cases per 1,000) | % Reduction |
 |------|---------|--------------------------|------------|
