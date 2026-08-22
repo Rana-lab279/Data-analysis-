@@ -9,41 +9,6 @@
     
 *First import data*
 
-
-PRESERVE.
-SET DECIMAL DOT.
-
-GET DATA  /TYPE=TXT
-  /FILE="C:\Users\RANA\Downloads\RELAY_WHS.csv"
-  /ENCODING='UTF8'
-  /DELIMITERS=","
-  /QUALIFIER='"'
-  /ARRANGEMENT=DELIMITED
-  /FIRSTCASE=2
-  /DATATYPEMIN PERCENTAGE=95.0
-  /VARIABLES=
-  IND_ID AUTO
-  IND_CODE AUTO
-  IND_UUID AUTO
-  IND_PER_CODE AUTO
-  DIM_TIME AUTO
-  DIM_TIME_TYPE AUTO
-  DIM_GEO_CODE_M49 AUTO
-  DIM_GEO_CODE_TYPE AUTO
-  DIM_PUBLISH_STATE_CODE AUTO
-  IND_NAME AUTO
-  GEO_NAME_SHORT AUTO
-  RATE_PER_1000_N AUTO
-  RATE_PER_1000_NL AUTO
-  RATE_PER_1000_NU AUTO
-  /MAP.
-RESTORE.
-CACHE.
-EXECUTE.
-DATASET NAME DataSet1 WINDOW=FRONT.
-
-
-
 *Delete unnecessary variables (IND_ID, IND_CODE, IND_UUID, IND_PER_CODE, DIM_TIME_TYPE, DIM_GEO_CODE_M49, DIM_PUBLISH_STATE_CODE, IND_NAME)
     and keep (DIM_GEO_CODE_TYPE, GEO_NAME_SHORT, DIM_TIME,    RATE_PER_1000_N,    RATE_PER_1000_NL,   RATE_PER_1000_NU)                                       
     
@@ -91,7 +56,7 @@ IF  (DIM_TIME = 2000) year_2000=RATE_PER_1000_N.
 VARIABLE LABELS  year_2000 'IF (DIM_TIME = 2000) year_2000=RATE_PER_1000_N '.
 EXECUTE.
 
-*Discriptive ana;ysis to see the median in 2000 and 2024*
+*Discriptive analysis to see the median in 2000 and 2024*
 
 
 DATASET ACTIVATE DataSet1.
@@ -111,11 +76,7 @@ EXAMINE VARIABLES=year_2000
   /MISSING LISTWISE
   /NOTOTAL.
 
-*Calculate the change by subtracting 2024-2000*
 
-COMPUTE Change=year_2024 - year_2000.
-VARIABLE LABELS  Change 'COMPUTE Change=year_2024 - year_2000'.
-EXECUTE.
 
 *Aggregate before calculating the change to combine incidence in 2000 and 2024 into one row per country*
 
