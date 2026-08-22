@@ -19,7 +19,7 @@ However, the change was not uniform across countries. The largest reduction in m
 
 ##Dataset
 Data source: [https://data.who.int/countries/729]
-Original data set file: 📥 [Download Dataset](RELAY_WHS.CSV)
+Original data set file: 📥 [Download Dataset](RELAY_WHS.csv)
 Data after cleaning and removing unnecessary variables:
 Time period: 2000 to 2024
 
