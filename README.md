@@ -101,7 +101,8 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 **Variables Retained** (n=6): 
 - `DIM_GEO_CODE_TYPE`, `DIM_TIME`, `GEO_NAME_SHORT`,`RATE_PER_1000_N', 'RATE_PER_1000_NL', 'RATE_PER_1000_NU'
 
- **Data after removing variables, labeling and left alignment**: 📥 [Download](cleaned%20malaria%20data.sav) | Documentation of the file 📥 [Download](10th%AUGUST%2026.pdf) 
+ **Data after removing variables, labeling and left alignment**: 📥 [Download](cleaned%20malaria%20data.sav) 
+ Documentation of the file 📥 [Download](10th%AUGUST%2026.pdf) 
 
 **Data Filtering & Aggregation**:
 - Filtered to include only "COUNTRY" geographical units (excluded regional/continental aggregates)
