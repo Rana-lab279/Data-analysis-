@@ -58,9 +58,6 @@ This analysis contributes to understanding the global malaria burden trajectory 
 - **Statistical Significance**: Wilcoxon Signed Rank Test (p < 0.001) 
 
 ### Countries with Largest Reductions
-1. **Solomon Islands**: -359.54 cases per 1,000
-2. **Guinea-Bissau**: -286.34 cases per 1,000
-3. **Burkina Faso**: -243.68 cases per 1,000 
 
 | Rank | Country | Change (cases per 1,000) | 
 |------|---------|--------------------------|
@@ -69,9 +66,6 @@ This analysis contributes to understanding the global malaria burden trajectory 
 | 3 | Burkina Faso | -243.68 | 
 
 ### Countries with Largest Increases
-1. **Madagascar**: 200.59 cases per 1,000
-2. **Eritrea**: 83.43 cases per 1,000
-3. **Djibouti**: 42.02 cases per 1,000 
 
 | Rank | Country | Change (cases per 1,000) | 
 |------|---------|--------------------------|
@@ -133,28 +127,18 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - Interpretation: Negative values = reduction; Positive values = increase
 
 **Step 3: Descriptive Statistics**
-
-**Step 4: Normality Testing**
-- **Test Used**: Shapiro-Wilk Test or Q-Q Plot
-- **Result**: Data **NOT normally distributed** (p < 0.05)
-- **Justification for Wilcoxon Test**: Non-parametric test appropriate for non-normal data
-
-
+- Descriptives on Change, year_2024_max, and year_2000_max_1 to know the median, IQR and to check for normality
 
 ### 3. Visualization
+- Tables: Table 1 showing the median, IQR, p-value and z-score of malaria incidence
+          Table 2: Malaria incidence in 2000 and 2024 across 108 countries, organized by the difference in incidence from the highest increase to the highest decrease.
+- Figures: Geographical map (country-level color-coded by change magnitude)
 
-**Geographical Map**: 
-- Visualization type: Choropleth map (country-level color-coded by change magnitude)
-- Tool: Microsoft Excel
-- Shows spatial distribution of malaria incidence changes globally
-- Color scale: Red (increases) → Yellow (minimal change) → Green (reductions)
+### Analysis tools
+- SPSS V.27 for data cleaning and editing and analysis
+- Microsoft Excel for Visualization
 
-**Supporting Visualizations Created**:
-- Top 10 countries with largest reductions (bar chart)
-- Top 10 countries with largest increases (bar chart)
-- Distribution histogram of all country changes
-- Time-series trend lines for select countries
-
+**SPSS syntax file for reproducibility**: 📥 [Download](First%data%analysis%project_MALARIA.sps) 
 
 ---
 
@@ -181,12 +165,6 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
    - Does not adjust for multiple comparisons in country-specific analyses
    - Extreme outliers may disproportionately influence results
 
-### Recommendations for Future Analysis
-- Perform sensitivity analysis excluding extreme outliers
-- Adjust for country-level covariates (GDP, healthcare spending, population)
-- Use mixed-effects models to account for country-level random effects
-- Incorporate time-series decomposition to separate trend from noise
-
 ---
 
 ## Author
@@ -196,7 +174,7 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - **GitHub**: [@Rana-lab279](https://github.com/Rana-lab279)
 - **Project Repository**: [Data-analysis-](https://github.com/Rana-lab279/Data-analysis-)
 - **Analysis Date**: 2024
-- **Contact**: ......................
+- **Contact**: www.linkedin.com/in/rana-hakim-5161b5204
 
 ### About This Analysis
 This analysis was conducted as part of a comprehensive data analysis training project focusing on global malaria incidence. The work demonstrates skills in:
