@@ -99,9 +99,10 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - `IND_ID`, `IND_CODE`, `IND_UUID`, `IND_PER_CODE`,`DIM_TIME_TYPE`, `DIM_GEO_CODE_M49`, `DIM_PUBLISH_STATE_CODE`, `IND_NAME`
 
 **Variables Retained** (n=6): 
-- `DIM_GEO_CODE_TYPE`, `DIM_TIME`, `GEO_NAME_SHORT`,`RATE_PER_1000_N', 'RATE_PER_1000_NL', 'RATE_PER_1000_NU'
+- `DIM_GEO_CODE_TYPE`, `DIM_TIME`, `GEO_NAME_SHORT`, `RATE_PER_1000_N`, `RATE_PER_1000_NL`, `RATE_PER_1000_NU`
 
  **Data after removing variables, labeling and left alignment**: 📥 [Download](cleaned%20malaria%20data.sav)   Documentation of the file 📥 [Download](10th%20AUGUST%202026.pdf) 
+
 
 
 **Data Filtering & Aggregation**:
@@ -129,8 +130,8 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - Descriptives on Change, year_2024_max, and year_2000_max_1 to know the median, IQR and to check for normality
 
 ### 3. Visualization
-- Tables: Table 1 showing the median, IQR, p-value and z-score of malaria incidence
-          Table 2: Malaria incidence in 2000 and 2024 across 108 countries, organized by the difference in incidence from the highest increase to the highest decrease.
+- Tables: Table 1: Showing the median, IQR, p-value and z-score of malaria incidence
+          Table 2: Malaria incidence in 2000 and 2024 across 108 countries, organized by the difference in incidence from the highest increase to the highest                         decrease.
 - Figures: Geographical map (country-level color-coded by change magnitude)
 
 ### Analysis tools
