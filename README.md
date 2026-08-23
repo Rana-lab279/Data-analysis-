@@ -19,7 +19,6 @@
 - [Key Insights & Implications](#key-insights--implications)
 - [Data Limitations](#data-limitations)
 - [Tools & Technologies](#tools--technologies)
-- [Future Work](#future-work)
 - [Author](#author)
 
 ---
@@ -174,46 +173,6 @@ Analyzed the `CHANGE` variable:
 - Distribution histogram of all country changes
 - Time-series trend lines for select countries
 
-### 4. Statistical Justification
-
-**Why Wilcoxon Signed Rank Test?**
-
-| Criterion | Finding | Implication |
-|-----------|---------|------------|
-| Normality (Shapiro-Wilk) | p < 0.05 | Data not normally distributed |
-| Sample Type | Paired data (2000 vs 2024) | Requires paired test |
-| Data Distribution | Skewed/Non-normal | Non-parametric test necessary |
-| **Decision** | — | **Wilcoxon Signed Rank Test** (robust, no normality assumption) |
-
----
-
-## Key Insights & Implications
-
-### Interpretation of Findings
-
-1. **Overall Progress**: The median reduction of -17.78 demonstrates global progress in malaria control, aligning with WHO initiatives and increased funding for malaria prevention programs.
-
-2. **Regional Disparities**: 
-   - African countries dominate the "greatest reduction" list, reflecting successful roll-out of bed nets and antimalarial treatments
-   - [Countries with increases]: Indicates potential challenges in surveillance, treatment access, or emerging drug resistance
-
-3. **Success Factors**: 
-   - Countries with largest reductions likely benefited from:
-     - Increased bed net distribution
-     - Artemisinin-based combination therapies (ACTs)
-     - Improved surveillance systems
-     - International funding (Global Fund, Gates Foundation)
-
-4. **Emerging Challenges**:
-   - Antimalarial drug resistance in [specific regions]
-   - [Other factors contributing to increases]
-
-### Implications for Public Health Policy
-
-- **Resource Allocation**: Prioritize funding to countries with increased incidence
-- **Best Practice Sharing**: Replicate successful strategies from top-performing countries
-- **Surveillance Enhancement**: Strengthen malaria surveillance in countries with worsening trends
-- **Research Agenda**: Investigate drivers of increases in specific countries
 
 ---
 
@@ -221,27 +180,21 @@ Analyzed the `CHANGE` variable:
 
 ### Key Limitations to Consider
 
-1. **Data Completeness**: 
-   - Not all countries had consistent data across all 24 years
-   - Missing data in [X countries] - [describe handling approach]
-   - Potential under-reporting in resource-limited settings
-
-2. **Data Quality Issues**:
+   - Not all countries had consistent data across all 24 years. And not all countries were included in the analysis
+   - Missing information such as population at risk may prevent performing other types of analysis.
+     
    - Variation in case reporting standards across countries and time periods
    - Improved diagnostics over time may create artificial increases in some countries
    - Differences in surveillance system sensitivity and specificity
 
-3. **Analytical Assumptions**:
    - Assumes data comparability across countries and time periods
    - 2000 and 2024 data may reflect different case definitions
    - Does not account for changes in population at risk
 
-4. **Scope Limitations**:
-   - Analysis describes *correlation* with time, not causation
+   - Analysis describes correlation with time, not causation
    - Cannot attribute changes to specific interventions without additional data
    - Cross-country comparisons complicated by differing healthcare infrastructure
 
-5. **Statistical Considerations**:
    - Sample sizes vary by country; some analyses based on small numbers
    - Does not adjust for multiple comparisons in country-specific analyses
    - Extreme outliers may disproportionately influence results
@@ -251,66 +204,6 @@ Analyzed the `CHANGE` variable:
 - Adjust for country-level covariates (GDP, healthcare spending, population)
 - Use mixed-effects models to account for country-level random effects
 - Incorporate time-series decomposition to separate trend from noise
-
----
-
-## Tools & Technologies
-
-| Tool | Version | Purpose |
-|------|---------|---------|
-| **SPSS Statistics** | 27.0 | Data cleaning, descriptive statistics, Wilcoxon test |
-| **Microsoft Excel** | 2021 | Geographical map visualization, supplementary charts |
-| **WHO Data Portal** | — | Data source and extraction |
-
-
-
-### Alternative Technologies (For Extension)
-- **Python**: Pandas/NumPy for data manipulation, Scipy for statistics, Geopandas/Folium for mapping
-- **R**: Tidyverse for data wrangling, ggplot2 for visualization, coin package for Wilcoxon test
-- **Tableau/Power BI**: Interactive dashboards for data exploration
-
----
-
-## Future Work
-
-### Potential Extensions & Improvements
-
-1. **Advanced Statistical Analysis**
-   - Implement **mixed-effects regression** to account for country-level random effects
-   - Perform **time-series decomposition** (trend, seasonal, residual components)
-   - Conduct **interrupted time-series analysis** to identify intervention impact points
-
-2. **Spatial & Temporal Analysis**
-   - Spatial autocorrelation analysis (Moran's I) to identify regional clustering
-   - **Geospatial visualization** using interactive maps (Leaflet, Plotly)
-   - Temporal trend analysis using ARIMA models
-
-3. **Data Integration & Contextualization**
-   - Merge with country-level covariates:
-     - GDP per capita
-     - Healthcare spending
-     - Bed net distribution rates
-     - Population demographics
-   - Perform **regression analysis** to identify predictors of malaria reduction
-
-4. **Mechanistic Understanding**
-   - Qualitative analysis of policy changes in top-performing countries
-   - Case studies of successful malaria control programs
-   - Interview/literature review of intervention strategies
-
-5. **Code Implementation**
-   - **Python**: Reproduce analysis using Pandas, SciPy, GeoPandas
-   - **R**: Implement using tidyverse, ggplot2, sf packages
-   - **Interactive Dashboard**: Develop Tableau/Power BI dashboards for exploration
-
-6. **Predictive Modeling**
-   - Forecast malaria incidence to 2030 using trend extrapolation
-   - Identify countries at risk of increased incidence
-
-7. **Validation & Sensitivity**
-   - Sensitivity analysis (exclude outliers, test different aggregation approaches)
-   - Bootstrap confidence intervals
-   - Cross-validation of statistical findings
 
 ---
 
@@ -324,19 +217,12 @@ Analyzed the `CHANGE` variable:
 - **Contact**: ......................
 
 ### About This Analysis
-This analysis was conducted as part of a comprehensive data analysis project focusing on global health trends. The work demonstrates skills in:
+This analysis was conducted as part of a comprehensive data analysis training project focusing on global malaria incidence. The work demonstrates skills in:
 - Data cleaning and preprocessing
 - Statistical analysis and hypothesis testing
 - Epidemiological data interpretation
 - Professional data visualization
 - Scientific communication
-
----
-
-## Acknowledgments
-
-- **Data Source**: World Health Organization (WHO) Global Health Observatory
-- **Tools**: IBM SPSS Statistics, Microsoft Excel
 
 ---
 
