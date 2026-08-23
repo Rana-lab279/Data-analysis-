@@ -1,7 +1,7 @@
 # Global Malaria Incidence Analysis (2000-2024)
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2024-blue)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-blue)
 ![Countries Analyzed](https://img.shields.io/badge/Countries%20Analyzed-103-orange)
 ![Data Source](https://img.shields.io/badge/Data%20Source-WHO-red)
 
@@ -17,7 +17,6 @@
   - [Data Analysis](#2-data-analysis)
   - [Visualization](#3-visualization)
 - [Data Limitations](#data-limitations)
-- [Tools & Technologies](#tools--technologies)
 - [Author](#author)
 
 ---
@@ -26,7 +25,7 @@
 
 This project **analyzes the change in malaria incidence from 2000 to 2024 across 103 countries** using publicly available data from the WHO website. The analysis examines temporal trends in malaria epidemiology and identifies countries with the most significant reductions and increases over this 25-year period.
 
-**Project Goal**: Determine how malaria incidence has changed across countries from 2000 to 2024, and identify which countries experienced the largest reductions or increases, providing insights for public health policy and intervention planning.
+**Project Goal**: To determine how malaria incidence has changed across countries from 2000 to 2024, and identify which countries experienced the largest reductions or increases.
 
 ---
 
@@ -81,11 +80,11 @@ This analysis contributes to understanding the global malaria burden trajectory 
 ## Dataset
 
 ### Data Source
-- **Primary Source**: [WHO Global Health Observatory](https://data.who.int/countries/729)
+- **Primary Source**: [WHO](https://data.who.int/countries/729)
 - **Dataset Name**: RELAY_WHS
 - **Dataset file**: 📥 [Download](RELAY_WHS.csv) 
 - **Time Period**: 2000 to 2024 (25 years)
-- **Countries Analyzed**: 108
+- **Countries in the file**: 108
 
 
 
@@ -111,9 +110,9 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - Sorted by number of cases to identify missing data patterns across years
 
 **Data Completeness**: 
-- Countries with complete 2000-2024 data: 103
+- Countries with complete 2000 and 2024 data: 103
 - Countries with missing data for 2000 and/or 2024: 5
-- Handling strategy: Missing countries were not excluded from the analysis
+- Handling strategy: Missing countries were excluded from the analysis
 
 ### 2. Data Analysis
 
@@ -135,8 +134,8 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - Figures: Geographical map (country-level color-coded by change magnitude)
 
 ### Analysis tools
-- SPSS V.27 for data cleaning and editing and analysis
-- Microsoft Excel for Visualization
+- SPSS V.27 for data cleaning, editing and analysis
+- Microsoft Excel 2024 for Visualization
 
 **SPSS syntax file for reproducibility**: 📥 [Download](First%data%analysis%project_MALARIA.sps) 
 
@@ -146,7 +145,7 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 
 ### Key Limitations to Consider
 
-   - Not all countries had consistent data across all 24 years. And not all countries were included in the analysis
+   - Not all countries had consistent data across all 24 years. And not all countries were included in the original file
    - Missing information such as population at risk may prevent performing other types of analysis.
      
    - Variation in case reporting standards across countries and time periods
@@ -186,4 +185,4 @@ This analysis was conducted as part of a comprehensive data analysis training pr
 
 ---
 
-**Last Updated**: August 2024 | **Status**: Complete ✓
+**Last Updated**: August 2026 | **Status**: Complete ✓
