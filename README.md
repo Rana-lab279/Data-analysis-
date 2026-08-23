@@ -16,7 +16,6 @@
   - [Data Cleaning & Editing](#1-data-cleaning--editing)
   - [Data Analysis](#2-data-analysis)
   - [Visualization](#3-visualization)
-- [Key Insights & Implications](#key-insights--implications)
 - [Data Limitations](#data-limitations)
 - [Tools & Technologies](#tools--technologies)
 - [Author](#author)
@@ -102,7 +101,7 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 ### 1. Data Cleaning & Editing
 
-**Objective**: Prepare raw WHO data for analysis by removing irrelevant variables and filtering to country-level units.
+Prepare raw WHO data for analysis by removing irrelevant variables and filtering to country-level units.
 
 **Variables Removed** (n=8):
 - `IND_ID`, `IND_CODE`, `IND_UUID`, `IND_PER_CODE`,`DIM_TIME_TYPE`, `DIM_GEO_CODE_M49`, `DIM_PUBLISH_STATE_CODE`, `IND_NAME`
@@ -119,45 +118,28 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 **Data Completeness**: 
 - Countries with complete 2000-2024 data: 103
-- Countries with missing years: 5
-- Handling strategy: Missing countries were excluded from the analysis
+- Countries with missing data for 2000 and/or 2024: 5
+- Handling strategy: Missing countries were not excluded from the analysis
 
 ### 2. Data Analysis
 
 **Step 1: Variable Creation**
-- Created `INCIDENCE_2000`: Malaria incidence in 2000 for each country
-- Created `INCIDENCE_2024`: Malaria incidence in 2024 for each country
+- Created `year_2000_max_1`: Malaria incidence in 2000 for each country
+- Created `year_2024_max`: Malaria incidence in 2024 for each country
 
 **Step 2: Change Calculation**
-- Formula: `CHANGE = INCIDENCE_2024 - INCIDENCE_2000`
+- Data was aggregated before calculating the change to combine incidence in 2000 and 2024 into one row per country.
+- The change was calculated using the formula: `Change = year_2024_max - year_2000_max_1`
 - Interpretation: Negative values = reduction; Positive values = increase
 
 **Step 3: Descriptive Statistics**
-Analyzed the `CHANGE` variable:
-- **Mean**: [Insert value]
-- **Median**: -17.78
-- **Standard Deviation**: [Insert value]
-- **IQR**: 109.76
-- **Range**: [Min to Max]
-- **Skewness**: [Insert value] (indicates data distribution shape)
-- **Kurtosis**: [Insert value]
 
 **Step 4: Normality Testing**
 - **Test Used**: Shapiro-Wilk Test or Q-Q Plot
 - **Result**: Data **NOT normally distributed** (p < 0.05)
 - **Justification for Wilcoxon Test**: Non-parametric test appropriate for non-normal data
 
-**Step 5: Ranking & Sorting**
-- Ranked countries by magnitude of change (largest reductions to largest increases)
-- Identified top 10 countries with greatest reductions
-- Identified top 10 countries with greatest increases
 
-**Step 6: Statistical Inference**
-- **Test**: Wilcoxon Signed Rank Test (non-parametric alternative to paired t-test)
-- **Null Hypothesis** (H₀): The median change in malaria incidence = 0 (no overall change)
-- **Alternative Hypothesis** (H₁): The median change ≠ 0 (significant change exists)
-- **Result**: [Insert p-value and conclusion]
-- **Effect Size**: [Insert Z-score or r value]
 
 ### 3. Visualization
 
