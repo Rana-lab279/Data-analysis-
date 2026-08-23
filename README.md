@@ -73,8 +73,7 @@ This analysis contributes to understanding the global malaria burden trajectory 
 | 3 | Djibouti | 42.02 | 
 
 ### Complete file for results interpretation
-📥 [Download](Results%Interpretation.pdf)
-
+📥 [Download](Results%20Interpretation.pdf)
 ---
 
 ## Dataset
@@ -137,7 +136,7 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - SPSS V.27 for data cleaning, editing and analysis
 - Microsoft Excel 2024 for Visualization
 
-**SPSS syntax file for reproducibility**: 📥 [Download](First%data%analysis%project_MALARIA.sps) 
+**SPSS syntax file for reproducibility**: 📥 [Download](First%20data%20analysis%20project_MALARIA.sps) 
 
 ---
 
