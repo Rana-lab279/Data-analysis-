@@ -5,6 +5,7 @@
 ![Number of the Participants](https://img.shields.io/badge/Countries%20Analyzed-350-orange)
 ![Data Source](https://img.shields.io/badge/Data%20Source-N/A-red)
 
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -15,17 +16,17 @@
 - [Data Limitations](#data-limitations)
 - [Author](#author)
 
+
 ---
+
 
 ## Project Overview
 
 This project ** included 350 participants with a median age of 50 (24.50) years and a mean BMI of 27.27 ± 4.52 kg/m². Of the participants, 56.6% were female and 43.4% were male. Regarding comorbidities, 39.1% had hypertension, 30.3% had diabetes, and 13.4% had chronic kidney disease. The study aimed to assess the effect of Treatment X on systolic blood pressure, diastolic blood pressure, and fasting blood glucose, and to determine if age, gender, BMI, and comorbidities influenced these changes.
 
 
-**Project Goal**: 
-1. To detect the effect of treatment X on blood pressure BP and fasting blood glucose FBG of the participants. 
-2. To assess the relationship between the changes in fasting blood glucose FBG and blood pressure (Systolic blood pressure SBP and diastolic blood pressure DBP) of the participants with age and BMI. 
-3. To determine the relationship between age, gender, BMI, hypertension, diabetes, and CKD with the changes in blood pressure and blood glucose.
+**Project Goal**: 1. To detect the effect of treatment X on blood pressure BP and fasting blood glucose FBG of the participants Z. 2. To assess the relationship between the changes in fasting blood glucose FBG and blood pressure (Systolic blood pressure SBP and diastolic blood pressure DBP) of the participants with age and BMI in both males and females. 3. To determine the relationship between age, gender, BMI, hypertension, diabetes, and CKD with the changes in blood pressure and blood glucose.
+
 
 ---
 
@@ -34,7 +35,9 @@ This project ** included 350 participants with a median age of 50 (24.50) years 
 
 **What is the effect of treatment X on blood pressure and fasting blood glucose of the participants Z?**
 
+
 ---
+
 
 ## Key Findings
 
@@ -42,11 +45,15 @@ This project ** included 350 participants with a median age of 50 (24.50) years 
 2. **Effect was consistent across groups**: There was no significant correlation between the changes in SBP, DBP, or FBG and age or BMI. 
 3. **No predictors identified**: In both simple and multiple regression, age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors of change in SBP, DBP, or FBG. The only exception was a weak correlation between change in DBP and age in males.
 
+Want me to format this as bullet points for a slide, or keep it as text for a report? 
 
 
 ### Complete file for results interpretation
 📥 [Download](Results%20Interpretation.pdf)
+
+
 ---
+
 
 ## Dataset
 
@@ -60,12 +67,16 @@ This project ** included 350 participants with a median age of 50 (24.50) years 
 
 ---
 
+
 ## Methodology
 
 **1- Data Cleaning & Editing** 
     - Responses were standardized, e.g. "ye" was changed to "yes"  
-    - Variables were aligned and decimals were removed from selected variables  
-    - The "change in fasting blood sugar" variable was deleted due to missing data and a new one was created using the formula ` Change = FastingBloodSugarPost -FastingBloodSugarPre`  
+- Autumaticly recode `Gender`, `Hx Diabetes` `Hx Hypertension', `HxCKD' from string to numeric. 
+- Recode the new variables (1=0), (2=1) to the new variables `Gender3`, `Hypertension3`, `Diabetes3`, and `CKD3'.
+- Delete the variables created from automatic recoding to avoid confusion. 
+    - The variable "FastingSugarChange" was deleted due to missing data and a new one was created with the same name using the formula ` FastingSugarChange = FastingSugarPost - FastingBloodSugarPre`  
+- Variables were aligned, values labeled and decimals were removed from some variables 
 
  ** 2- Descriptive Statistics**  
     - Frequencies and percentages were calculated for gender and comorbidities  
@@ -94,7 +105,9 @@ This project ** included 350 participants with a median age of 50 (24.50) years 
 
 **SPSS syntax file for reproducibility**: 📥 [Download](First%20data%20analysis%20project_MALARIA.sps) 
 
+
 ---
+
 
 ## Data Limitations
 
@@ -106,7 +119,9 @@ This project ** included 350 participants with a median age of 50 (24.50) years 
 - Comorbidities were likely self-reported, risk of misclassification.
 - Potential confounders not measured, e.g. medication adherence, diet, lifestyle.
 
+
 ---
+
 
 ## Author
 
@@ -128,7 +143,10 @@ This was the second analysis conducted as part of a comprehensive data analysis 
 - Linear regression: simple and multiple
 - Stratified analysis by gender
 - Data visualization with box plots
+
+
 ---
+
 
 **Last Updated**: September 2026 | **Status**: Complete ✓
 
