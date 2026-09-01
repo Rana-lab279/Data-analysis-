@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2026-blue)
-![Number of the Participants](https://img.shields.io/badge/Countries%20Analyzed-350-orange)
+![Number of the Participants](https://img.shields.io/badge/Number%20of%20the%20participants-350-orange)
 ![Data Source](https://img.shields.io/badge/Data%20Source-N/A-red)
 
 
@@ -22,7 +22,7 @@
 
 ## Project Overview
 
-This project ** included 350 participants with a median age of 50 (24.50) years and a mean BMI of 27.27 ± 4.52 kg/m². Of the participants, 56.6% were female and 43.4% were male. Regarding comorbidities, 39.1% had hypertension, 30.3% had diabetes, and 13.4% had chronic kidney disease. The study aimed to assess the effect of Treatment X on systolic blood pressure, diastolic blood pressure, and fasting blood glucose, and to determine if age, gender, BMI, and comorbidities influenced these changes.
+This project included 350 participants with a median age of 50 (24.50) years and a mean BMI of 27.27 ± 4.52 kg/m². Of the participants, 56.6% were female and 43.4% were male. Regarding comorbidities, 39.1% had hypertension, 30.3% had diabetes, and 13.4% had chronic kidney disease. The study aimed to assess the effect of Treatment X on systolic blood pressure, diastolic blood pressure, and fasting blood glucose, and to determine if age, gender, BMI, and comorbidities influenced these changes.
 
 
 **Project Goal**: 1. To detect the effect of treatment X on blood pressure BP and fasting blood glucose FBG of the participants Z. 2. To assess the relationship between the changes in fasting blood glucose FBG and blood pressure (Systolic blood pressure SBP and diastolic blood pressure DBP) of the participants with age and BMI in both males and females. 3. To determine the relationship between age, gender, BMI, hypertension, diabetes, and CKD with the changes in blood pressure and blood glucose.
@@ -78,7 +78,7 @@ Want me to format this as bullet points for a slide, or keep it as text for a re
     - The variable "FastingSugarChange" was deleted due to missing data and a new one was created with the same name using the formula ` FastingSugarChange = FastingSugarPost - FastingBloodSugarPre`  
 - Variables were aligned, values labeled and decimals were removed from some variables 
 
- ** 2- Descriptive Statistics**  
+ **2- Descriptive Statistics**  
     - Frequencies and percentages were calculated for gender and comorbidities  
     - Age was reported as Median (IQR) as it was not normally distributed  
     - BMI was reported as Mean +/- SD as it was normally distributed  
@@ -88,12 +88,12 @@ Want me to format this as bullet points for a slide, or keep it as text for a re
     - Paired t-test was used to compare before and after values  
     - Box plots were created for BP and FBG before and after  
 
- ** 4- Correlation**  
+ **4- Correlation**  
     - Pearson correlation was used between changes in SBP, DBP, FBG and age, BMI  
     - No significant correlations were found overall  
     - Analysis was stratified by gender. A weak significant correlation was found in males between change in DBP and age, and change in DBP and change in SBP  
 
-** 5- Regression**  
+**5- Regression**  
     - Simple and multiple linear regression were performed to assess predictors of change in SBP, DBP, and FBG  
     - Age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors  
     - The analysis was repeated after stratification by gender and results remained non-significant  
