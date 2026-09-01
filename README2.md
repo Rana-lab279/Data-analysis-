@@ -45,7 +45,6 @@ This project included 350 participants with a median age of 50 (24.50) years and
 2. **Effect was consistent across groups**: There was no significant correlation between the changes in SBP, DBP, or FBG and age or BMI. 
 3. **No predictors identified**: In both simple and multiple regression, age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors of change in SBP, DBP, or FBG. The only exception was a weak correlation between change in DBP and age in males.
 
-Want me to format this as bullet points for a slide, or keep it as text for a report? 
 
 
 ### Complete file for results interpretation
