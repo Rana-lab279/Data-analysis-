@@ -72,6 +72,14 @@ This analysis contributes to understanding the global malaria burden trajectory 
 | 2 | Eritrea | 83.43 | 
 | 3 | Djibouti | 42.02 | 
 
+
+## Malaria Incidence Trend 2000-2024
+
+This graph shows the change in malaria incidence per 1000 population.
+
+![Malaria incidence trend 2000-2024](malaria_trend_2000_2024.png)
+
+
 ### Complete file for results interpretation
 📥 [Download](Results%20Interpretation.pdf)
 ---
