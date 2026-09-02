@@ -75,13 +75,14 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 ## Malaria Incidence Trend 2000-2024
 
-This graph shows the change in malaria incidence per 1000 population.
+This Graph Shows the Change in Malaria Incidence per 1000 Population.
 
 <img width="2145" height="1287" alt="Image" src="https://github.com/user-attachments/assets/074ec402-916b-4732-97c1-55303a6a237d" />
 
 
+
 ### Complete file for results interpretation
-📥 [Download](Results%20Interpretation.pdf)
+📥 [Download][Results Interpretation.pdf](https://github.com/user-attachments/files/31726163/Results.Interpretation.pdf)
 ---
 
 ## Dataset
@@ -89,7 +90,7 @@ This graph shows the change in malaria incidence per 1000 population.
 ### Data Source
 - **Primary Source**: [WHO](https://data.who.int/countries/729)
 - **Dataset Name**: RELAY_WHS
-- **Dataset file**: 📥 [Download](RELAY_WHS.csv) 
+- **Dataset file**: 📥 [Download][RELAY_WHS.csv](https://github.com/user-attachments/files/31726165/RELAY_WHS.csv)
 - **Time Period**: 2000 to 2024 (25 years)
 - **Countries in the file**: 108
 
@@ -109,7 +110,8 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 **Variables Retained** (n=6): 
 - `DIM_GEO_CODE_TYPE`, `DIM_TIME`, `GEO_NAME_SHORT`, `RATE_PER_1000_N`, `RATE_PER_1000_NL`, `RATE_PER_1000_NU`
 
- **Data after removing variables, labeling and left alignment**: 📥 [Download](cleaned%20malaria%20data.sav)   Documentation of the file 📥 [Download](10th%20AUGUST%202026.pdf) 
+ **Data after removing variables, labeling and left alignment**: 📥 [Download][Malaria incidence.zip](https://github.com/user-attachments/files/31726467/Malaria.incidence.zip)
+ Documentation of the file 📥 [Download][10th AUGUST 2026.pdf](https://github.com/user-attachments/files/31726167/10th.AUGUST.2026.pdf)
 
 
 
@@ -146,7 +148,7 @@ Prepare raw WHO data for analysis by removing irrelevant variables and filtering
 - SPSS V.27 for data cleaning, editing and analysis
 - Microsoft Excel 2024 for Visualization
 
-**SPSS syntax file for reproducibility**: 📥 [Download](First%20data%20analysis%20project_MALARIA.sps) 
+**SPSS syntax file for reproducibility**: 📥 [Download][Malaria incidence.zip](https://github.com/user-attachments/files/31726467/Malaria.incidence.zip)
 
 ---
 
