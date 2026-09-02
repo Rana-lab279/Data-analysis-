@@ -77,7 +77,7 @@ This analysis contributes to understanding the global malaria burden trajectory 
 
 This graph shows the change in malaria incidence per 1000 population.
 
-![Malaria incidence trend 2000-2024](malaria_trend_2000_2024.png)
+<img width="2145" height="1287" alt="Image" src="https://github.com/user-attachments/assets/074ec402-916b-4732-97c1-55303a6a237d" />
 
 
 ### Complete file for results interpretation
