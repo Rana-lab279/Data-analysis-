@@ -22,7 +22,7 @@
 
 ## Project Overview
 
-This project included 350 participants with a median age of 50 (24.50) years and a mean BMI of 27.27 ± 4.52 kg/m². Of the participants, 56.6% were female and 43.4% were male. Regarding comorbidities, 39.1% had hypertension, 30.3% had diabetes, and 13.4% had chronic kidney disease. The study aimed to assess the effect of Treatment X on systolic blood pressure, diastolic blood pressure, and fasting blood glucose, and to determine if age, gender, BMI, and comorbidities influenced these changes.
+This project included 350 participants with a median age of 50 (24.50) years and a mean BMI of 27.27 ± 4.52 kg/m². Of the participants, 56.6% were females and 43.4% were males. Regarding comorbidities, 39.1% had hypertension, 30.3% had diabetes, and 13.4% had chronic kidney disease. The study aimed to assess the effect of Treatment X on systolic blood pressure, diastolic blood pressure, and fasting blood glucose, and to determine if age, gender, BMI, and comorbidities influenced these changes.
 
 
 **Project Goal**: 1. To detect the effect of treatment X on blood pressure BP and fasting blood glucose FBG of the participants Z. 2. To assess the relationship between the changes in fasting blood glucose FBG and blood pressure (Systolic blood pressure SBP and diastolic blood pressure DBP) of the participants with age and BMI in both males and females. 3. To determine the relationship between age, gender, BMI, hypertension, diabetes, and CKD with the changes in blood pressure and blood glucose.
@@ -59,9 +59,8 @@ Figure 1: Blood Pressure before and After Treatment.
 Figure 2: Fasting Blood Glucose before and after Treatment.
 
 
-2. **Effect was consistent across groups**: There was no significant correlation between the changes in SBP, DBP, or FBG and age or BMI. 
-3. **No predictors identified**: In both simple and multiple regression, age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors of change in SBP, DBP, or FBG. The only exception was a weak correlation between change in DBP and age in males.
-
+2. **Effect was consistent across groups**: There was no significant correlation between the changes in SBP, DBP, or FBG and age or BMI. The only exception was among males, the change in DBP showed a weak but statistically significant positive correlation with age, r = 0.162, p < 0.05, and with change in SBP, r = 0.184, p < 0.05. No other significant correlation was observed in males or females 
+3. **No predictors identified**: In both simple and multiple regression, age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors of change in SBP, DBP, or FBG.
 
 
 ### Complete file for results interpretation
