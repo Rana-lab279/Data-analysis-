@@ -86,12 +86,12 @@ Figure 2: Fasting Blood Glucose before and after Treatment.
 ## Methodology
 
 **1- Data Cleaning & Editing** 
-    - Responses were standardized, e.g. "ye" was changed to "yes"  
-- Autumaticly recode `Gender`, `Hx Diabetes` `Hx Hypertension', `HxCKD' from string to numeric. 
-- Recode the new variables (1=0), (2=1) to the new variables `Gender3`, `Hypertension3`, `Diabetes3`, and `CKD3'.
-- Delete the variables created from automatic recoding to avoid confusion. 
-    - The variable "FastingSugarChange" was deleted due to missing data and a new one was created with the same name using the formula ` FastingSugarChange = FastingSugarPost - FastingBloodSugarPre`  
-- Variables were aligned, values labeled and decimals were removed from some variables 
+- Responses were standardized, e.g. "ye" was changed to "yes"  
+- The variables `Gender`, `Hx Diabetes`, `Hx Hypertension`, and `HxCKD`  were autumatically recoded from string to numerical. 
+- The created variables were recoded (1=0), (2=1) to the new variables `Gender3`, `Hypertension3`, `Diabetes3`, and `CKD3` for easier interpretation of the regression results.
+- The variables created from automatic recoding were deleted to avoid confusion. 
+- The variable "FastingSugarChange" was deleted due to missing data for all the participants, and a new one was created with the same name using the formula ` FastingSugarChange = FastingSugarPost - FastingBloodSugarPre`  
+- Variables were aligned, labeled and decimals were removed from some variables 
 
  **2- Descriptive Statistics**  
     - Frequencies and percentages were calculated for gender and comorbidities  
@@ -104,7 +104,7 @@ Figure 2: Fasting Blood Glucose before and after Treatment.
     - Box plots were created for BP and FBG before and after  
 
  **4- Correlation**  
-    - Pearson correlation was used between changes in SBP, DBP, FBG and age, BMI  
+    - Pearson correlation was used between age, BMI, and changes in SBP, DBP, and FBG 
     - No significant correlations were found overall  
     - Analysis was stratified by gender. A weak significant correlation was found in males between change in DBP and age, and change in DBP and change in SBP  
 
@@ -118,7 +118,7 @@ Figure 2: Fasting Blood Glucose before and after Treatment.
 - SPSS V.27 for data cleaning, editing, analysis and visualization.
 
 
-**SPSS syntax file for reproducibility**: 📥 [Download] [Clinical trial for treatment X.zip](https://github.com/user-attachments/files/31727567/Clinical.trial.for.treatment.X.zip)
+**SPSS syntax file and an SPSS file containing data after analysis for reproducibility**: 📥 [Download] [Clinical trial for treatment X.zip](https://github.com/user-attachments/files/31727567/Clinical.trial.for.treatment.X.zip)
 
 
 ---
