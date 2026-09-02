@@ -42,13 +42,30 @@ This project included 350 participants with a median age of 50 (24.50) years and
 ## Key Findings
 
 1. **Treatment X was effective**: Significant reductions were seen in all outcomes after treatment. SBP decreased by 11.95 mmHg, DBP by 7.04 mmHg, and FBG by 18.25 mg/dl. All changes were statistically significant, p < 0.001.
+
+
+
+
+<img width="1916" height="975" alt="Image" src="https://github.com/user-attachments/assets/6973c15d-fd88-4032-b46b-2bae1bfb16d7" />
+
+
+Figure 1: Blood Pressure before and After Treatment.
+
+
+
+
+<img width="1650" height="990" alt="Image" src="https://github.com/user-attachments/assets/c9174aed-a6a8-4a60-bd58-6cb19af8bc3e" />
+
+Figure 2: Fasting Blood Glucose before and after Treatment.
+
+
 2. **Effect was consistent across groups**: There was no significant correlation between the changes in SBP, DBP, or FBG and age or BMI. 
 3. **No predictors identified**: In both simple and multiple regression, age, gender, BMI, hypertension, diabetes, and CKD were not significant predictors of change in SBP, DBP, or FBG. The only exception was a weak correlation between change in DBP and age in males.
 
 
 
 ### Complete file for results interpretation
-📥 [Download](Results%20Interpretation.pdf)
+📥 [Download] [CLINICAL_TRIAL2_RESULTS.pdf](https://github.com/user-attachments/files/31727565/CLINICAL_TRIAL2_RESULTS.pdf)
 
 
 ---
@@ -59,7 +76,7 @@ This project included 350 participants with a median age of 50 (24.50) years and
 ### Data Source
 - **Primary Source**: N/A
 - **Dataset Name**: participant_clinical_dataset_350_raw_data.xlsx
-- **Dataset file**: 📥 [Download](participant_clinical_dataset_350_raw_data.xlsx) 
+- **Dataset file**: 📥 [Download] [participant_clinical_dataset_350_raw_data.xlsx](https://github.com/user-attachments/files/31727566/participant_clinical_dataset_350_raw_data.xlsx)
 - **Number of participants**: 350
 
 
@@ -102,7 +119,7 @@ This project included 350 participants with a median age of 50 (24.50) years and
 - SPSS V.27 for data cleaning, editing, analysis and visualization.
 
 
-**SPSS syntax file for reproducibility**: 📥 [Download](First%20data%20analysis%20project_MALARIA.sps) 
+**SPSS syntax file for reproducibility**: 📥 [Download] [Clinical trial for treatment X.zip](https://github.com/user-attachments/files/31727567/Clinical.trial.for.treatment.X.zip)
 
 
 ---
